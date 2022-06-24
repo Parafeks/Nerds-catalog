@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;  /* картинки выровнены по верху, чтобы не было снизу артефактного отступа */
+}
+
+h1, h2, h3, h4 {
+    font-weight: inherit;  /* насыщенность */
+    font-size: inherit;
+}
+
+body{
+    height: 100%;     /* ? что значит у Боди высота 100% простыми словами. А что будет, если ее не поставить?*/
+    font-size: 16px;
+    line-height: 1;  /* межстрочный интервал */
+    font-family: Roboto;
+}
+
+.wrapper{
+    min-height: 100%;  /* ? */
+    overflow: hidden;  /* скрыть все, что выходит за пределы */
+}
+
+.header-container{
+    max-width: 1160px;   /* ширина контейнера с информацией */
+    margin: 0 auto;     /* центрирование контейнера */
+    
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin-top: 49px;
+    border: 2px solid greenyellow;
+
+    font-weight: 500;
+}
+
+.nav-list{
+    text-transform: uppercase;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li:not(:last-child){
+    padding-right: 45px;
+}
+
+.nav-link-cart {
+    display: flex;
+}
+
+.nav-link-cart-img{
+    padding-right: 30px;
+}
+
+
+
+
