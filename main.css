@@ -24,6 +24,8 @@ img{
 h1, h2, h3, h4 {
     font-weight: inherit;  /* насыщенность */
     font-size: inherit;
+    margin: 0px;
+  
 }
 
 body{
@@ -33,34 +35,51 @@ body{
     font-family: Roboto;
 }
 
+
+/* ------------- ШАПКА ------------ */
+
 .wrapper{
     min-height: 100%;  /* ? */
-    overflow: hidden;  /* скрыть все, что выходит за пределы */
+    overflow: hidden;  /*скрыть все, что выходит за пределы */
+    border: 3px solid rgb(17, 0, 255);
+
+}
+
+.header{
+   background-color: #EEEEEE;
 }
 
 .header-container{
     max-width: 1160px;   /* ширина контейнера с информацией */
     margin: 0 auto;     /* центрирование контейнера */
-    
+    border: 1px solid red;
+
+
 }
 
 .nav-menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: start; /* для того, чтобы сделать конкретные отступы между лого и меню */
     align-items: center;
     width: 1160px;
     margin-top: 49px;
-    border: 2px solid greenyellow;
 
     font-weight: 500;
+    /* border:1px solid black; */
+
+}
+
+.nav-logo{
+    margin-right: 202px;
 }
 
 .nav-list{
     text-transform: uppercase;
-}
-
-.nav-list{
     display: flex;
+    margin-right: 246px;
+    /* border:1px solid black; */
+
+
 }
 
 .nav-list li:not(:last-child){
@@ -71,10 +90,31 @@ body{
     display: flex;
 }
 
-.nav-link-cart-img{
+.nav-link-cart_img{
     padding-right: 30px;
 }
 
+.nav-link-cart-text{
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.title-page_header{
+    margin: 87px 0px 106px 0px;
+    /* border: 3px solid greenyellow; */
+
+}
+
+.title-page_header h1{
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+
+}
+
+/* -------------MEIN----------- */
 
 
 
+
+margin: 0px 0px 0px 0px;
