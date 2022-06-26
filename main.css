@@ -39,7 +39,7 @@ body{
 /* ------------- ШАПКА ------------ */
 
 .wrapper{
-    min-height: 100%;  /* ? */
+    min-height: 100%;  
     overflow: hidden;  /*скрыть все, что выходит за пределы */
     border: 3px solid rgb(17, 0, 255);
 
@@ -53,8 +53,6 @@ body{
     max-width: 1160px;   /* ширина контейнера с информацией */
     margin: 0 auto;     /* центрирование контейнера */
     border: 1px solid red;
-
-
 }
 
 .nav-menu{
@@ -66,7 +64,6 @@ body{
 
     font-weight: 500;
     /* border:1px solid black; */
-
 }
 
 .nav-logo{
@@ -78,12 +75,18 @@ body{
     display: flex;
     margin-right: 246px;
     /* border:1px solid black; */
-
-
 }
 
 .nav-list li:not(:last-child){
     padding-right: 45px;
+}
+
+.nav-list_item:hover{
+    color: #fb565a;
+}
+
+.nav-list_item:active{
+    color: #9a9a9a;
 }
 
 .nav-link-cart {
@@ -96,6 +99,14 @@ body{
 
 .nav-link-cart-text{
     text-shadow: 0px 4px 4px #00000040;
+}
+
+.nav-link-cart-text:hover{
+    color: #fb565a;
+}
+
+.nav-link-cart-text:active{
+    color: #9a9a9a;
 }
 
 .title-page_header{
@@ -112,7 +123,32 @@ body{
 
 }
 
-/* -------------MEIN----------- */
+/* -------------ЛЕВЫЙ БЛОК: СТОИМОСТЬ----------- */
+
+.mein-container {
+    max-width: 260px;
+    border: 1px solid red;
+
+
+}
+.left-block {
+}
+.left-block-cost {
+}
+.left-block-cost_titles {
+}
+.left-block-cost_slider {
+}
+.left-block-cost_slider_line {
+}
+.left-block-cost_slider_line_start {
+}
+.left-block-cost_slider_line_end {
+}
+.left-block-cost_price {
+}
+.left-block-cost_price_label {
+}
 
 
 
