@@ -31,38 +31,43 @@
                 </a>
             </nav>
 
-            <div class="title-page_header">
-                <h1>Магазин готовых шаблонов</h1>
-            </div>
-
         </div> 
     </header>
 
     <main class="main">
+
+        <div class="title-page_header">
+            <h1>Магазин готовых шаблонов</h1>
+        </div>
+        
         <div class="mein-container">  <!-- тут будет флекс основной левого блока  -->
 
             <div class="left-block">
 
                 <div class="left-block-cost">
-                   <p class="left-block-cost_titles">стоимость:</p>
+                   <p class="left-block_titles">стоимость:</p>
                    <div class="left-block-cost_slider">   <!-- серый фон  -->
-                        <div class="left-block-cost_slider_line"> <!-- зеленая линия  -->
-                            <div class="left-block-cost_slider_line_start"></div> <!-- кружок старта  -->
-                            <div class="left-block-cost_slider_line_end"></div>   <!-- кружок финиша  -->
-                        </div>
+                        <div class="left-block-cost_slider_line_round">  <!-- кружок финиша  -->
+                            <div class="left-block-line_inside"></div> <!-- кружок внутри1  -->
+                        </div>  
+                        <div class="left-block-cost_slider_line"></div> <!-- зеленая линия  -->
+                        <div class="left-block-cost_slider_line_round"> <!-- кружок старта  -->
+                            <div class="left-block-line_inside"></div> <!-- кружок внутри2  --> 
+                        </div> 
                     </div>
                     <div class="left-block-cost_price">
-                        <label class="left-block-cost_price_label">до
-                            <!-- инпут -->
+                        <label class="left-block-cost_input-price">от
+                            <input type="text" class="input-price" name="from-price" value="0"> 
                         </label>
-                        <label class="left-block-cost_price_label">от
-                            <!-- инпут -->
+                        <label class="left-block-cost_input-price">до
+                            <input type="text" class="input-price" name="to-price" value="15 000"> 
                         </label>
                     </div>
                 </div>  
                 
                 <div class="left-block_grid">
                     <p class="left-block_titles">сетка:</p>
+                    
 
                 </div>
                 <div class="left-block_special">
@@ -74,6 +79,9 @@
 
         </div>
     </main>
+
+    <footer class="footer">
+    </footer>
 </div>
     
 </body>

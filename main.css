@@ -42,17 +42,17 @@ body{
     min-height: 100%;  
     overflow: hidden;  /*скрыть все, что выходит за пределы */
     border: 3px solid rgb(17, 0, 255);
-
-}
+    }
 
 .header{
    background-color: #EEEEEE;
 }
 
 .header-container{
-    max-width: 1160px;   /* ширина контейнера с информацией */
+    max-width: 1160px;
+    height: 116px;   /* ширина контейнера с информацией */
     margin: 0 auto;     /* центрирование контейнера */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .nav-menu{
@@ -60,10 +60,9 @@ body{
     justify-content: start; /* для того, чтобы сделать конкретные отступы между лого и меню */
     align-items: center;
     width: 1160px;
-    margin-top: 49px;
+    padding-top: 49px;
 
     font-weight: 500;
-    /* border:1px solid black; */
 }
 
 .nav-logo{
@@ -109,10 +108,14 @@ body{
     color: #9a9a9a;
 }
 
-.title-page_header{
-    margin: 87px 0px 106px 0px;
-    /* border: 3px solid greenyellow; */
+/* -------------MAIN----------- */
 
+
+.title-page_header{
+    padding: 87px 0px 106px 0px;
+    background-color: #EEEEEE;
+    height: 239px;
+    border: 3px solid greenyellow;
 }
 
 .title-page_header h1{
@@ -126,31 +129,101 @@ body{
 /* -------------ЛЕВЫЙ БЛОК: СТОИМОСТЬ----------- */
 
 .mein-container {
-    max-width: 260px;
+    max-width: 260px;  /*ограничиваем левый контейнер по ширине левого блока */
     border: 1px solid red;
-
-
 }
+
 .left-block {
 }
+
 .left-block-cost {
 }
-.left-block-cost_titles {
-}
-.left-block-cost_slider {
-}
-.left-block-cost_slider_line {
-}
-.left-block-cost_slider_line_start {
-}
-.left-block-cost_slider_line_end {
-}
-.left-block-cost_price {
-}
-.left-block-cost_price_label {
+
+/* .left-block-cost p:first-child{
+    margin: 57px 0px 48px 0px;
+} */
+
+.left-block_titles {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;    
 }
 
+.left-block_titles:first-child {
+}
+
+.left-block-cost_slider {
+    width: 260px;
+    height: 80px;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-block-cost_slider_line{
+    border: none;
+    background-color: #00CA74;
+    height: 2px;
+    width: 201px;
+
+}
+.left-block-cost_slider_line_round {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-block-line_inside{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ABABAB;
+}
+
+/* ____ */
+
+.left-block-cost_price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;    
+
+}
+
+.left-block-cost_input-price{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+   
+}
+
+.input-price{
+    width: 80px;
+    height: 38px;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-left: 9px;    
+}
 
 
 
 margin: 0px 0px 0px 0px;
+
+
+
+
