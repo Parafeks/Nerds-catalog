@@ -134,21 +134,16 @@ body{
 
 /* -------------ЛЕВЫЙ БЛОК: Стоимость----------- */
 
-.mein-container {
+.left-block-container {
     max-width: 260px;  /*ограничиваем левый контейнер по ширине левого блока */
     margin-left: 140px;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
 }
 
-.left-block {
-}
 
-.left-block-cost {
-}
-
-.left-block_titles {
+.left-block_titles, .center-header-title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
@@ -238,9 +233,6 @@ body{
     display: none; /*скрываем значки чекбокса*/
 }
 
-.left-block_grid{
-}
-
 .radio{
     margin-bottom: 16px;
     position: relative;
@@ -253,6 +245,7 @@ body{
     color: #283136;
 
     padding-left: 36px;
+    cursor: pointer;
 }
 
 .radio-label::before{
@@ -270,7 +263,7 @@ body{
     /* z-index: 1; */
 }
 
-.radio-label::after{
+.radio-label::after{    /*рисуем точку внутри чекнутого маркера */
     content: "";
     display: block;
     width: 10px;
@@ -286,15 +279,27 @@ body{
     display: none;
 }
 
-.radio-input:checked + .radio-label::after {
+.radio-input:checked +.radio-label::before { 
+    border: 4px solid #4d4d4d;
+} 
+
+.radio-input:checked +.radio-label::after {
     display: block;
+    background: #4d4d4d;
+}
+
+.radio-input:hover +.radio-label::before {
+    border: 4px solid #4d4d4d;
+}
+
+.radio-input:disabled +.radio-label{
+    opacity: .4;
+    cursor: not-allowed;
 }
 
 
 /* -------------ЛЕВЫЙ БЛОК: Особенности ----------- */
 
-.left-block_special {         
-}
 
 .special-text {
     margin: 43px 0px 20px 0px;
@@ -314,6 +319,7 @@ body{
 .checkbox-input {
     display: none;
 }
+
 .checkbox-label {
     font-size: 16px;
     font-weight: 400px;
@@ -321,6 +327,7 @@ body{
     color: #283136;
 
     padding: 36px;
+    cursor: pointer;
 }
 
 .checkbox-label::before{
@@ -328,9 +335,9 @@ body{
     display: block;
     width: 23px;
     height: 23px;
-
-    background: url(images/checkbox-off.png) no-repeat;
-    /* background-size: 23px 23px; */
+    opacity: .4;
+    
+    background: url(images/checkbox-off.svg) no-repeat;
 
     position: absolute;
     top: -2px;
@@ -338,7 +345,7 @@ body{
     z-index: 1;
 }
 
-.checkbox-label::after{
+/* .checkbox-label::after{
     content: "";
     display: block;
     width: 23px;
@@ -352,10 +359,20 @@ body{
     z-index: 2;
 
     display: none;
+} */
+
+.checkbox-input:checked +.checkbox-label::before{
+    background: url(images/checkbox-on.svg) no-repeat;
+    z-index: 2;
 }
 
-.checkbox-input:checked +.checkbox-label::after{
-    display: block;
+.checkbox-input:hover +.checkbox-label::before{
+    opacity: 1;
+}
+
+.checkbox-input:disabled +.checkbox-label{
+    opacity: .4;
+    cursor: not-allowed; /* вид курсора */
 }
 
 
@@ -383,6 +400,118 @@ body{
     border-top: 2px solid #c0c0c0;
     width: 258px;
 }
+
+
+
+
+/* ------------- ЦЕНТРАЛЬНАЯ ЧАСТЬ - сортировка----------- */
+
+.main-wrapper{
+    display: flex;
+}
+
+.center-container{
+    width: 758px;
+    margin-left: 141px;
+
+    border: 2px solid greenyellow;
+}
+
+.center-header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(140, 118, 235);
+}
+
+.center-header-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.center-header_sort-list{  /* ul */
+    display: flex;
+    align-items: center;
+}
+
+.sort-item:not(:last-child){
+    padding-right: 25px;
+}
+
+.sort-item:last-child {
+    padding-right: 47px;
+}
+
+.sort-link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: .3;
+}
+
+.sort-item:hover, .triangle-link:hover{
+    opacity: .6;
+}
+
+.sort-item:active, .triangle-link:active{
+    opacity: 1;
+}
+
+.sort-link:focus, .triangle-link:focus{
+    opacity: 1;
+}
+
+
+.center-header_triangle-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.triangle-link{
+    opacity: .2;
+}
+
+
+.triangle-item:first-child{
+    margin-right: 18px;
+}
+
+
+/* ------------- ЦЕНТРАЛЬНАЯ ЧАСТЬ - макеты----------- */
+
+.maket {
+    width: 360px;
+    margin: 48px 0px 0px 0px;
+
+    border: 2px solid pink;
+}
+
+.maket-header {
+    width: 360px;
+    height: 618px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: #4D4D4D;
+
+    position: relative;
+}
+
+.maket-img {
+}
+.maket-info {
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
