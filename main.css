@@ -102,6 +102,7 @@ body{
 
 .nav-link-cart-text{
     text-shadow: 0px 4px 4px #00000040;
+    color: #000000;
 }
 
 .nav-link-cart-text:hover{
@@ -583,12 +584,27 @@ body{
     /* box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
 }
 
+.page-number{
+    /* border: 2px solid black; */
+    margin: 56px 0px 0px 540px;
+}
 
 
+.page-number_item{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+    padding: 18px;   
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    
+    text-align: center;
+}
 
-
-
-
+.number{
+    width: 260px;
+}
 
 
 
