@@ -606,6 +606,66 @@ body{
     width: 260px;
 }
 
+/* -------------MAP----------- */
+
+.map {
+    width: 1440px;
+    height: 416px;
+    background: url(images/map.svg) no-repeat;
+    position: relative;
+    margin-top: 60px;
+}
+
+.adress {
+    width: 319px;
+    height: 308px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 55px;
+    left: 140px;
+}
+
+.adress h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+}
+
+.adress p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666666;
+}
+
+.adress-button {
+    display: block;
+    width: 219px;
+    height: 50px;
+    background-color: #FB565A;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.map-logo {
+    position: absolute;
+}
+
+
+
+
+
 
 
 /* -------------ФУТЕР----------- */
