@@ -413,12 +413,12 @@ body{
 .center-container{
     width: 758px;
     margin-left: 141px;
+}
 
+.maket-wrap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /* border: 2px solid greenyellow; */
 }
 
 .center-header{
