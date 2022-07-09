@@ -17,7 +17,7 @@ ul, ol, li{
 }
 
 img{
-    vertical-align: top;  /* картинки выровнены по верху, чтобы не было снизу артефактного отступа */
+    vertical-align: top;  картинки выровнены по верху, чтобы не было снизу артефактного отступа
 }
 
 h1, h2, h3, h4 {
@@ -28,14 +28,14 @@ h1, h2, h3, h4 {
 }
 
 body{
-    height: 100%;     /*прижимаем футер к низу */
+    height: 100%;    /* прижимаем футер к низу*/
     font-size: 16px;
     line-height: 1;  /* межстрочный интервал */
     font-family: Roboto;
 }
 
 .main{
-    flex: 1 1 auto; /*прижимаем футер к низу */
+    flex: 1 1 auto; /*прижимаем футер к низу*/
 }
 
 /* ------------- ШАПКА ------------ */
@@ -43,10 +43,9 @@ body{
 .wrapper{
     min-height: 100%;    /*прижимаем футер к низу */
     overflow: hidden;  /*скрыть все, что выходит за пределы */
-    /* border: 3px solid rgb(17, 0, 255); */
     display: flex;                   /*прижимаем футер к низу */
     flex-direction: column;           /*прижимаем футер к низу */
-    }
+}
 
 .header{
    background-color: #EEEEEE;
@@ -309,7 +308,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: start;
-    row-gap: 17px;
+    row-gap: 17px;   /*устанавливает промежуток между рядами во флексе */
 }
 
 .checkbox li{
@@ -408,11 +407,12 @@ body{
 
 .main-wrapper{
     display: flex;
+    justify-content: flex-start;
 }
 
 .center-container{
     width: 758px;
-    margin-left: 141px;
+    margin-left: 80px;
 }
 
 .maket-wrap{
@@ -583,6 +583,8 @@ body{
     background-color: #d7373b;
     /* box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
 }
+
+
 
 .page-number{
     /* border: 2px solid black; */
